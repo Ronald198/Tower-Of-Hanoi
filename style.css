@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body{
@@ -11,9 +12,9 @@ body{
 
 #game_container{
     position: absolute;
-    transform: translate(0%, 50%);
+    transform: translate(0%, 70%);
     box-shadow: darkblue 10px 10px 10px 10px;
-    width: 500px;
+    width: 600px;
     height: 300px;
     display: flex;
     justify-content: space-evenly;
@@ -25,8 +26,8 @@ body{
 }
 
 .base{
-    background-color: red;
-    width: 150px;
+    background-color: blue;
+    width: 175px;
     height: 10px;
     border-radius: 5px;
     display: flex;
@@ -34,9 +35,68 @@ body{
 }
 
 .pole{
-    background-color: red;
+    background-color: blue;
     width: 10px;
     height: 200px;
     border-radius: 5px 5px 0px 0px;
     transform: translate(0%, -200px);
+}
+
+.disk{
+    border-radius: 8px;
+    height: 20px;
+    position: absolute;
+    z-index: 100;
+}
+
+#disk1{
+    background-color: #042704;
+    width: 160px;
+}
+
+#disk2{
+    background-color: #054905;
+    width: 140px;
+}
+
+#disk3{
+    background-color: #075f07;
+    width: 120px;
+}
+
+#disk4{
+    background-color: #0d8d0d;
+    width: 100px;
+}
+
+#disk5{
+    background-color: #0eaf0e;
+    width: 80px;
+}
+
+#disk6{
+    background-color: #0fc90f;
+    width: 60px;
+}
+
+#disk7{
+    background-color: #18f018;
+    width: 40px;
+}
+
+#disk8{
+    background-color: #99ee99;
+    width: 30px;
+}
+
+#disksNumberContainer{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#disksNumberContainer button{
+    width: 30px;
+    height: 30px;
 }

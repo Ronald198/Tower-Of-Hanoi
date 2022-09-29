@@ -8,26 +8,53 @@
         <link rel="stylesheet" href="style.css" type="text/css">
     </head>
 
-    <body>
+    <body id="body">
+        <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <br>
+            <h1 style="color: aqua;">TOWER OF HANOI</h1>
+            <br>
+            <h3>The objective of the game is to move all the disks over to Tower 3 (with your mouse). One condition: you cannot place a larger disk onto a smaller disk.</h3>
+            <br>
+            <p id="moves" style="text-align: right;">Moves: 0 | Minimum of moves required: 255</p>
+            <h1 id="win" style="text-align: right; color: darkorange; padding-top: 5px;"></h1>
+        </div>
+
         <div id="game_container">
             <div class="tower" id="tower1">
-                <div class="base">
+                <div class="base" id="base1">
                     <div class="pole"></div>
                 </div>
             </div>
 
             <div class="tower" id="tower2">
-                <div class="base">
+                <div class="base" id="base2">
                     <div class="pole"></div>
                 </div>
             </div>
 
             <div class="tower" id="tower3">
-                <div class="base">
+                <div class="base" id="base3">
                     <div class="pole"></div>
                 </div>
             </div>
         </div>
+
+        <div id="disksNumberContainer">
+            <h3 id="nrIndicator">Disk's number: 8</h3>
+            <p>&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+            <button onclick="addDisk()">+</button>
+            <p>&nbsp;&nbsp;</p>
+            <button onclick="removeDisk()">-</button>
+        </div>
+
+        <div id="disk1" class="disk" onmousedown="enter('disk1')" onmouseup="leave()"></div>
+        <div id="disk2" class="disk" onmousedown="enter('disk2')" onmouseup="leave()"></div>
+        <div id="disk3" class="disk" onmousedown="enter('disk3')" onmouseup="leave()"></div>
+        <div id="disk4" class="disk" onmousedown="enter('disk4')" onmouseup="leave()"></div>
+        <div id="disk5" class="disk" onmousedown="enter('disk5')" onmouseup="leave()"></div>
+        <div id="disk6" class="disk" onmousedown="enter('disk6')" onmouseup="leave()"></div>
+        <div id="disk7" class="disk" onmousedown="enter('disk7')" onmouseup="leave()"></div>
+        <div id="disk8" class="disk" onmousedown="enter('disk8')" onmouseup="leave()"></div>
 
         <script src="app.js"></script>
     </body>
